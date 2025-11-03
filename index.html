@@ -6,6 +6,40 @@
     <title>Document</title>
 </head>
 <body>
-<script src="index.js"></script>    
+    <h1 id="main">This is the heading</h1>
+    <h1>I am blesed</h1>
+    <h2>Todays journey </h2>
+    <h4>Something fishy</h4>
+    <p>This is a long sentence </p>
+    <button onclick="change()">Press to change</button>
+    <button onclick="reset()">Reset</button>
+    <script>
+        // change one
+    document.getElementById("main").innerHTML= "<u>Document Object Module.</u> <br> These text have been changed in this browser."
+    let next = document.getElementsByTagName("h1")[1]
+    next.innerHTML= "I am blesed"
+    // change two
+    let to = document.getElementsByTagName("h2")[0]
+    to.innerHTML= "Quess What"
+    // change three
+    let me = document.getElementsByTagName("h4")[0]
+    me.innerHTML= "Lets go"
+    // four
+    let they = document.getElementsByTagName("p")[0]
+    they.innerHTML= "This is a short sentence"
+    // onclick event
+    function change(){
+        alert("This button has been pressed")
+        let v = document.getElementsByTagName("h4")[0]
+        v.innerHTML= "Learn more"
+    }
+    // onclick reset
+    function reset(){
+        alert("This will reset this")
+        let t = document.getElementsByTagName("h2")[0]
+        t.innerHTML= "You have reset this"
+    }
+    </script>
+    
 </body>
 </html>
