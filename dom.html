@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image with JavaScript</title>
+</head>
+
+<body>
+    <h1>Change Image with JavaScript</h1>
+
+    <!--  image 1 -->
+    <img id="myImage" src="https://codm.garena.com/static/images/Main-page/P1/main-kv.jpg"  class="w-full" alt="Placeholder Image" width="200" />
+    
+
+    <!--  Add a button -->
+    <br><br>
+    <button id="changeBtn">Change Image</button>
+
+    <!--  JavaScript -->
+    <script>
+        // image and button elements
+        const image = document.getElementById('myImage');
+        const button = document.getElementById('changeBtn');
+
+        // event listener to the button
+        button.addEventListener('click', function () {
+
+            // Change the image when clicked
+            image.src = "https://picsum.photos/300";
+        });
+    </script>
+</body>
+
+</html>
